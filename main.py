@@ -1,11 +1,15 @@
-import pandas as pd
+from dotenv import load_dotenv
+import os
 import requests
-import matplotlib.pyplot as plt
+import pandas as pd
+
+load_dotenv()
+
+FRED_API_KEY = os.getenv("FRED_API_KEY")
 
 # Gonzalo GL notes
 # next step: use different series to retrieve rrp and treasury data
 
-FRED_API_KEY = os.getenv("FRED_API_KEY")
 series_id = 'WALCL'  
 # Fed Total Assets. Next step: use other series to retrieve reverse repo data but response json hierarchy will be different... current dataframe wont work
 

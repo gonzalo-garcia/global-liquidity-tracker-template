@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import os
 import requests
 import pandas as pd
+import matplotlib.pyplot as plt
 
 load_dotenv()
 
